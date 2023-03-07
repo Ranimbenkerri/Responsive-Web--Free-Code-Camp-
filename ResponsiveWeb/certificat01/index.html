@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+     
+<label id="name-label"> Name <input id="name" name="name-label" type="text" placeholder="Enter your name" required /></label>
+       
+        <label id="email-label"> Email <input id="email" name="email-label" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label">
+Age(optional)<input type="number" id="number" name="number-label" min="10" max="99" class="form-control" placeholder="Age">
+</label>
+
+
+  
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="personal-account"><input id="personal-account" type="radio" name="user-recommend" value="definetely" checked/>Definitely</label>
+        <label for="maybe"><input value="Maybe" id="maybe" type="radio" name="user-recommend"  /> Maybe</label>
+        
+        <label id="Not-sure"><input type="radio" value="not-sure" name="user-recommend" /> Not sure</label>
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select id="dropdown" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select>
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
